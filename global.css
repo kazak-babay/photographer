@@ -1,0 +1,81 @@
+html {
+	scroll-behavior: smooth;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 1. Убираем отступы, паддинги, бордеры у всех элементов */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 2. Убираем стили списков */
+ul,
+ol {
+	list-style: none;
+}
+
+/* 3. Убираем стандартное оформление ссылок */
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* 4. Ставим понятный шрифт */
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+	background: #fff;
+	color: #000;
+}
+
+/* 5. Убираем выделение с фокуса в некоторых браузерах */
+button,
+input,
+textarea,
+select {
+	font: inherit;
+	outline: none;
+	border: none;
+	background: none;
+}
+
+/* 6. Ставим блочную модель по умолчанию */
+img,
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* 7. Наследуем шрифты и цвет */
+input,
+button,
+textarea,
+select {
+	color: inherit;
+}
+
+/* 8. Для HTML5-элементов, если нужно поддержку старых браузеров */
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main {
+	display: block;
+}
+
